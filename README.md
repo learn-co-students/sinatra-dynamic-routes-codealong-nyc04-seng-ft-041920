@@ -123,8 +123,8 @@ the URL to the views?
 URL params help us get the text from the URL into the views. That `:name` in the
 route name is just a symbol that will be filled in with text later. The data is
 passed from the URL to the controller action through an automatically generated
-hash called `params`. Don't worry too much about how the hash is created. Just 
-know that inside your controller action, you automatically have access to this 
+hash called `params`. Don't worry too much about how the hash is created. Just
+know that inside your controller action, you automatically have access to this
 hash through the variable `params`.
 
 To continue the medicine example, the hash looks something like this:
@@ -135,7 +135,7 @@ params = {
 }
 ```
 
-**Note:** Values in params always come in as strings, and your return value for 
+**Note:** Values in params always come in as strings, and your return value for
 the route should also be a string (use `.to_i` and `.to_s`).
 
 The key of the hash is determined by the symbol in the url (`:id`), and the
