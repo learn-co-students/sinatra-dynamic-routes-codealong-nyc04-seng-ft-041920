@@ -22,6 +22,5 @@ class App < Sinatra::Base
   get '/multiply/:num1/:num2' do
     @multiply = params[:num1].to_i * params[:num2].to_i
     "#{@multiply}"
-    # erb :'/multiply/show.html'
   end
 end
